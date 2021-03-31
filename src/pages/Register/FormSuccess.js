@@ -45,5 +45,9 @@ const BackgroundSVG = styled(Box)`
     max-width: 650px;
     height: auto;
     padding: 110px 0 0;
+
+    @media screen and (max-width: 425px) {
+      max-width: 250px;
+    }
   }
 `;
