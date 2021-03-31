@@ -3,6 +3,7 @@ import Row from "../../components/common/Row";
 import Box from "../../components/common/Box";
 
 export const FormContentRight = styled(Row)`
+  justify-content: center;
   padding: 40px;
   align-items: flex-start;
   background-color: #e5e7eb;
@@ -15,6 +16,14 @@ export const Form = styled.form`
   padding: 0 20px 30px;
   border-radius: 8px;
   background-color: #fff;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 385px;
+  }
 `;
 
 export const BoxForm = styled(Box)`
@@ -46,6 +55,18 @@ export const BoxLogin = styled(Box)`
     height: 1px;
     position: absolute;
     top: 26px;
+
+    @media screen and (max-width: 1024px) {
+      width: 90px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 110px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 65px;
+    }
   }
 
   &::before {
@@ -93,6 +114,18 @@ export const Input = styled.input`
   &:focus {
     outline: 0;
     border-color: ${(props) => props.theme.colors.focusInput};
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 250px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 200px;
   }
 `;
 
@@ -154,6 +187,24 @@ export const ButtonFBGG = styled.button`
     transition: all 0.2s ease-in-out;
     background: #e5e7eb;
   }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 135px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 160px;
+  }
+
+  @media screen and (max-width: 375px) {
+    max-width: 115px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 320px) {
+    max-width: 110px;
+    height: 40px;
+  }
 `;
 
 export const BackgroundSVG = styled(Box)`
@@ -161,5 +212,14 @@ export const BackgroundSVG = styled(Box)`
     max-width: 512px;
     height: auto;
     padding: 60px 0 0 60px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 400px;
+      padding: 75px 0 0 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `;

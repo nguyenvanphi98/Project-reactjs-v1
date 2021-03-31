@@ -2,7 +2,7 @@ import React from "react";
 import validate from "./validateInfo";
 import useForm from "./useForm";
 import * as S from "./styled";
-import { TextSpan } from "../../components/common/Text";
+import { Text } from "../../components/common/Text";
 
 import SVG from "react-inlinesvg";
 
@@ -72,10 +72,10 @@ const FormSignup = ({ submitForm }) => {
         </S.BoxForm>
         <S.ButtonForm>
           <S.Button type="submit">Sign up</S.Button>
-          <TextSpan padding="5px 0 0">
+          <Text isGray>
             Already have an account?
-            <S.LinkLogin href="/login">Login</S.LinkLogin>
-          </TextSpan>
+            <S.LinkLogin href="/login"> Login</S.LinkLogin>
+          </Text>
         </S.ButtonForm>
       </S.Form>
       <S.BackgroundSVG>

@@ -38,4 +38,10 @@ export const Text = styled.p`
     css`
       margin: ${margin};
     `}
+
+  ${({ isGray }) =>
+    isGray &&
+    css`
+      color: ${({ theme }) => theme.colors.gray};
+    `}
 `;

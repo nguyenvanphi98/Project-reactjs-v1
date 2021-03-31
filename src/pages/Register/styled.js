@@ -3,6 +3,7 @@ import Row from "../../components/common/Row";
 import Box from "../../components/common/Box";
 
 export const FormContentRight = styled(Row)`
+  justify-content: center;
   padding: 40px;
   align-items: flex-start;
   background-color: #e5e7eb;
@@ -12,9 +13,17 @@ export const FormContentRight = styled(Row)`
 
 export const Form = styled.form`
   max-width: 385px;
-  padding: 0 20px 30px;
+  padding: 0 20px 10px;
   border-radius: 8px;
   background-color: #fff;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 385px;
+  }
 `;
 
 export const BoxForm = styled(Box)`
@@ -60,6 +69,18 @@ export const Input = styled.input`
     outline: 0;
     border-color: ${(props) => props.theme.colors.focusInput};
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 250px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 200px;
+  }
 `;
 
 export const ButtonForm = styled(Box)`
@@ -93,6 +114,8 @@ export const Button = styled.button`
 
 export const TextError = styled.p`
   color: red;
+  margin: 0;
+  padding-top: 5px;
 `;
 
 export const LinkLogin = styled.a``;
@@ -102,5 +125,14 @@ export const BackgroundSVG = styled(Box)`
     max-width: 512px;
     height: auto;
     padding: 60px 0 0 60px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 400px;
+      padding: 75px 0 0 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `;

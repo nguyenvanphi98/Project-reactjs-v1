@@ -21,10 +21,8 @@ const FormSignup = ({ submitForm }) => {
         noValidate
       >
         <S.HeadingLogin>Login</S.HeadingLogin>
-        <TextSpan isGray>
-          Doesn't have any account yet?
-          <S.LinkLogin href="/register">Sign Up</S.LinkLogin>
-        </TextSpan>
+        <TextSpan isGray>Doesn't have any account yet?</TextSpan>
+        <S.LinkLogin href="/register"> Sign Up </S.LinkLogin>
 
         <S.BoxForm>
           <S.BoxLabel>
